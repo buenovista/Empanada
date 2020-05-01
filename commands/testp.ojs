@@ -1,0 +1,32 @@
+const Discord = require("discord.js");
+const userlist = require("../users.json")
+const fs = require("fs");
+
+//DO NOT USE OR RENAME THE EXTENSION OF THIS COMMAND  TO .JS.
+
+exports.run = async (client, message, args) => {
+
+  function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+       result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+ }
+
+ const vcode = (makeid(10));
+
+if (!userlist[message.author.id]) { // If the guild's id is not on the GUILDCONF File, proceed
+userlist[message.author.id] = {
+username: message.author.username,
+discrim: message.author.discriminator,
+authcode: vcode
+}
+}
+ fs.writeFile('./users.json', JSON.stringify(userlist, null, 2), (err) => {
+ if (err) console.log(err)
+})
+
+  }

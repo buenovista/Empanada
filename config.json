@@ -1,0 +1,17 @@
+{
+  "token": "Paste your token here.",
+  "license": "This is not being used.",
+  "projectname": "Empanada",
+  "version": "v1.1",
+  "copyright": "2018-2020 VitaHost. A VizuDev Service",
+  "logo": "https://millie.vizudev.net/presources/vhbanner.png",
+  "bg": "https://millie.vizudev.net/presources/vdbg.jpg",
+  "color": "purple darken-1",
+  "prtcl": "https",
+  "website": "secured.vita.host:2083",
+  "port": "This is not being used.",
+  "prefix": "#",
+  "ownerid": "476500263163658243",
+  "eFooter": "Powered by Project Empanada",
+  "gColor": "0x8e24aa"
+}

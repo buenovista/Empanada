@@ -1,0 +1,33 @@
+{
+  "name": "empanada",
+  "version": "1.0.0",
+  "description": "Project empanada.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "discord"
+  ],
+  "author": "VizuDev",
+  "license": "AGPL v3",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "ejs": "^3.0.1",
+    "enmap": "^4.2.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "path": "^0.12.7",
+    "paypal-rest-sdk": "^1.8.1",
+    "pug": "^2.0.4",
+    "snekfetch": "^4.0.0",
+    "update-json-file": "^1.1.1"
+  },
+  "engines": {
+    "node": "8.10.0"
+  }
+}

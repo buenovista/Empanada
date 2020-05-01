@@ -1,0 +1,50 @@
+{
+    "VDLAT-PS-0001": {
+       "pname": "-",
+       "buttonid": "",
+       "price": "$0.00 USD/y",
+       "status": "enabled"
+     },
+     "VDLAT-PS-0002": {
+        "pname": "-",
+        "buttonid": "",
+        "price": "$0.00 USD/y",
+        "status": "disabled"
+      },
+      "VDLAT-PS-0003": {
+        "pname": "-",
+        "buttonid": "",
+        "price": "$0.00 USD/y",
+        "status": "disabled"
+      },
+      "VDLAT-PS-0004": {
+        "pname": "-",
+        "buttonid": "",
+        "price": "$0.00 USD/y",
+        "status": "disabled"
+      },
+      "VDLAT-PS-0005": {
+        "pname": "-",
+        "buttonid": "",
+        "price": "$0.00 USD/y",
+        "status": "disabled"
+      },
+      "VDLAT-PS-0006": {
+        "pname": "-",
+        "buttonid": "",
+        "price": "$0.00 USD/y",
+        "status": "disabled"
+      },
+      "VDLAT-PS-0007": {
+        "pname": "-",
+        "buttonid": "",
+        "price": "$0.00 USD/y",
+        "status": "disabled"
+      },
+      "VDLAT-PS-0008": {
+        "pname": "-",
+        "buttonid": "",
+        "price": "$0.00 USD/y",
+        "status": "disabled"
+      }
+   }

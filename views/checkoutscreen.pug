@@ -1,0 +1,79 @@
+doctype html
+// Designed and developed with love by VizuDev. Project Empanada
+head
+  meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title #{project}
+  // CSS
+  link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+  link(href='https://millie.vizudev.net/presources/css/materialize.css' type='text/css' rel='stylesheet' media='screen,projection')
+  link(href='https://millie.vizudev.net/presources/css/style.css' type='text/css' rel='stylesheet' media='screen,projection')
+  style.
+    body{background-color:#ff4081}
+    .black-text{color:#fff!important}
+    .rblack-text{color:#000000!important}
+nav(role='navigation' class='' + `${wcolor}`)
+  .nav-wrapper.container
+    a#logo-container.brand-logo.black-text(href='#')
+      picture
+        source(type='image/webp' srcset='' + `${logo}`)
+        img.header-logo(width='230' height='60' src='' + `${logo}`)
+    ul.right.hide-on-med-and-down
+      li
+        a.black-text #{project}. #{version}
+      li
+        a.black-text Total: #{price}
+      li
+        a.black-text Product: #{pname}
+      li
+        a.black-text Service: VitaHost
+    ul#nav-mobile.sidenav
+      li
+        a Product: Product Name
+      li
+        a Service: VitaHost
+    a.sidenav-trigger(href='#' data-target='nav-mobile')
+      i.material-icons menu
+#index-banner.parallax-container
+  .section.no-pad-bot
+    .container
+      br
+      br
+      h1.header.center.white-text.text-lighten-2 This is important!
+      .row.center
+        h5.header.col.s12.light
+          | Your username is #{username}##{discrim} and your secret code is #{ut}. Don&apos;t give this code to anyone, we use this code to verify this is you and know what are you going to buy here. You will be able to use this code to ask our support team for help with your product. If someone knows your code please cancel this PS with &quot;#cancel&quot; on Discord.
+      .row.center
+        form(target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post')
+          input(type='hidden' name='cmd' value='_s-xclick')
+          input(type='hidden' name='token' value='' + `${ut}`)
+          input(type='hidden' name='hosted_button_id' value='' + `${paypalid}`)
+          input(type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!')
+          img(alt='' border='0' src='https://www.paypalobjects.com/es_XC/i/scr/pixel.gif' width='1' height='1')
+      br
+      br
+  .parallax
+    img(src='' + `${bg}`)
+footer.page-footer.pink.accent-2
+  .container
+    .row
+      .col.l6.s12
+        h5.white-text
+          img.header-logo(width='230' height='60' src='' + `${logo}`)
+          img.header-logo(width='230' height='60' src='https://millie.vizudev.net/vdbanner.png' alt='VizuDev Logo')
+        p.grey-text.text-lighten-4
+          | Powered by #{project}.
+          br
+          | Errors? Contact us on Discord!
+          br
+          | &copy;#{copy}
+      .col.l3.s12
+        h5.white-text
+        ul
+      .col.l3.s12
+        h5.white-text
+        ul
+// Scripts
+script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+script(src='https://millie.vizudev.net/presources/js/materialize.js')
+script(src='https://millie.vizudev.net/presources/js/init.js')
