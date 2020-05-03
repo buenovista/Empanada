@@ -3,7 +3,7 @@
 ----
 ## What is Project Empanada?
 
-Project Empanada is a Discord made for selling hosting on VitaHost. You can use it for selling hosting or something else! Just remember to not remove VizuDev logo in the footer.
+Project Empanada is a Discord bot made for selling hosting through Discord. You can use it for selling hosting or something else! Just remember to not remove VizuDev logo in the footer.
 
 ----
 ## What do you need.
