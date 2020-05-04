@@ -4,8 +4,8 @@ const fs = require("fs");
 var https = require('https')
 const express = require('express');
 const app = express();
-const products = require("./products.json");
-const userlist = require("./users.json")
+const products = require("./users.json");
+const userlist = require("./products.json")
 
 const client = new Discord.Client();
 const config = require("./config.json");
@@ -15,9 +15,9 @@ client.config = config;
 
 //this is important af, don't remove it
 
-let clogo = config.logo
+let logo = config.logo
 let bg = config.bg
-let color = config.color //With this you can change the navbar color. Go to https://materializecss.com/color.html#palette to see all the colors.
+let color = config.color //With this you can change the text color. Go to https://materializecss.com/color.html#palette to see all the colors.
 let version = config.version
 let projectname = config.projectname
 let copy = config.copyright
